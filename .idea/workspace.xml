@@ -15,11 +15,14 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/cricket/CricketLeagueAnalyser.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/cricket/CricketLeagueAnalyser.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/cricket/CricketLeagueAnalyserTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/com/cricket/CricketLeagueAnalyserTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/com.cricket.CricketLeagueAnalyserTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/com.cricket.CricketLeagueAnalyserTest.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/com.cricket.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/com.cricket.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-com.cricket.CricketLeagueAnalyserTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-com.cricket.CricketLeagueAnalyserTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/com.cricket.CricketLeagueAnalyserTest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/css/base-style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/js/report.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/com.cricket.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-com.cricket.CricketLeagueAnalyserTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/cricket/CricketLeagueAnalyser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cricket/CricketLeagueAnalyser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/cricket/CricketLeagueAnalyserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cricket/CricketLeagueAnalyserTest.java" afterDir="false" />
     </list>
@@ -73,13 +76,33 @@
       <recent name="C:\Users\BHUSHAN\IdeaProjects\CricketLeagueAnalyser\src\test\resources\csv" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.CricketLeagueAnalyserTest.givenMostRunsCSVFile_WhenTopBattingSixesAndFours_ShouldReturnTopPlayerName">
-    <configuration name="CricketLeagueAnalyserTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.CricketLeagueAnalyserTest.givenMostRunsCSVFile_WhenMaximumAverage_ShouldreturnStrikeRate">
+    <configuration name="CricketLeagueAnalyserTest.givenMostRunsCSVFile_WhenMaximumAverage_ShouldreturnStrikeRate" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.cricket.CricketLeagueAnalyserTest&quot;" />
+        <option name="scriptParameters" value="--tests &quot;com.cricket.CricketLeagueAnalyserTest.givenMostRunsCSVFile_WhenMaximumAverage_ShouldreturnStrikeRate&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="CricketLeagueAnalyserTest.givenMostRunsCSVFile_WhenStrikeRates_ShouldReturnMaximumAverage" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;com.cricket.CricketLeagueAnalyserTest.givenMostRunsCSVFile_WhenStrikeRates_ShouldReturnMaximumAverage&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -100,26 +123,6 @@
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" value="--tests &quot;com.cricket.CricketLeagueAnalyserTest.givenMostRunsCSVFile_WhenTopBattingFourse_ShouldreturnTopPlayerName&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":cleanTest" />
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="CricketLeagueAnalyserTest.givenMostRunsCSVFile_WhenTopBattingSixec_ShouldreturnTopPlayerName" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.cricket.CricketLeagueAnalyserTest.givenMostRunsCSVFile_WhenTopBattingSixec_ShouldreturnTopPlayerName&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -176,11 +179,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.CricketLeagueAnalyserTest.givenMostRunsCSVFile_WhenMaximumAverage_ShouldreturnStrikeRate" />
+        <item itemvalue="Gradle.CricketLeagueAnalyserTest.givenMostRunsCSVFile_WhenStrikeRates_ShouldReturnMaximumAverage" />
         <item itemvalue="Gradle.CricketLeagueAnalyserTest.givenMostRunsCSVFile_WhenTopBattingSixesAndFours_ShouldReturnTopPlayerName" />
         <item itemvalue="Gradle.CricketLeagueAnalyserTest.givenMostRunsCSVFile_WhenTopBattingSixes_ShouldreturnTopPlayerName" />
         <item itemvalue="Gradle.CricketLeagueAnalyserTest.givenMostRunsCSVFile_WhenTopBattingFourse_ShouldreturnTopPlayerName" />
-        <item itemvalue="Gradle.CricketLeagueAnalyserTest.givenMostRunsCSVFile_WhenTopBattingSixec_ShouldreturnTopPlayerName" />
-        <item itemvalue="Gradle.CricketLeagueAnalyserTest" />
       </list>
     </recent_temporary>
   </component>
@@ -214,22 +217,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="109" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1587125985884" />
-    <state width="1322" height="140" key="GridCell.Tab.0.bottom" timestamp="1587146528568">
+    <state width="1322" height="140" key="GridCell.Tab.0.bottom" timestamp="1587147670251">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="140" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1587146528568" />
-    <state width="1322" height="140" key="GridCell.Tab.0.center" timestamp="1587146528568">
+    <state width="1322" height="140" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1587147670251" />
+    <state width="1322" height="140" key="GridCell.Tab.0.center" timestamp="1587147670251">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="140" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1587146528568" />
-    <state width="1322" height="140" key="GridCell.Tab.0.left" timestamp="1587146528568">
+    <state width="1322" height="140" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1587147670251" />
+    <state width="1322" height="140" key="GridCell.Tab.0.left" timestamp="1587147670251">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="140" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1587146528568" />
-    <state width="1322" height="140" key="GridCell.Tab.0.right" timestamp="1587146528568">
+    <state width="1322" height="140" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1587147670251" />
+    <state width="1322" height="140" key="GridCell.Tab.0.right" timestamp="1587147670251">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="140" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1587146528568" />
+    <state width="1322" height="140" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1587147670251" />
     <state width="498" height="446" key="SwitcherDM" timestamp="1587120535365">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

@@ -52,4 +52,14 @@ public class CricketLeagueAnalyserTest {
         MostRunsCSV[] mostRunsCSV= new Gson().fromJson(sortedData, MostRunsCSV[].class);
         Assert.assertEquals(204.81,mostRunsCSV[0].strikeRate,0.0);
     }
+
+    @Test
+    public void givenMostRunsCSVFile_WhenMaximumAverage_ShouldreturnStrikeRate() {
+        CricketLeagueAnalyser cricketLeagueAnalyser = new CricketLeagueAnalyser();
+        cricketLeagueAnalyser.loadCricketData(MOST_RUNS_CSV);
+        String averageWiseBySortedBatsManData = cricketLeagueAnalyser.getAverageWiseBySortedBatsManData();
+        MostRunsCSV[] mostRunsCSV= new Gson().fromJson(averageWiseBySortedBatsManData, MostRunsCSV[].class);
+        Assert.assertEquals(134.62,mostRunsCSV[0].strikeRate,0.0);
+    }
+
 }

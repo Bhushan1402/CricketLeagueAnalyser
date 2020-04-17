@@ -51,6 +51,11 @@ public class CricketLeagueAnalyser {
         String jsonData = this.getDescendingOrder(cricketDAOComparator);
         return jsonData;
     }
+    public String getStrikeRateWiseBySortedAverageBatsManData() {
+        Comparator<CricketDAO> cricketDAOComparator = Comparator.comparing(cricketDAO -> cricketDAO.average);
+        String jsonData = this.getDescendingOrder(cricketDAOComparator);
+        return jsonData;
+    }
 
     public String getDescendingOrder(Comparator<CricketDAO> comparator){
         ArrayList cricketDTOS= cricketMap.values().stream().sorted(comparator.reversed())
