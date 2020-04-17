@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.cricket.CricketLeagueAnalyserTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2020-04-17T18:22:27" hostname="SHREE" time="2.017">
+<testsuite name="com.cricket.CricketLeagueAnalyserTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-04-17T18:35:29" hostname="SHREE" time="0.951">
   <properties/>
-  <testcase name="givenMostRunsCSVFile_WhenTopBattingSixes_ShouldreturnTopPlayerName" classname="com.cricket.CricketLeagueAnalyserTest" time="0.937"/>
-  <testcase name="givenMostRunsCSVFile_WhenMaximumAverage_ShouldreturnStrikeRate" classname="com.cricket.CricketLeagueAnalyserTest" time="0.18"/>
-  <testcase name="givenMostRunsCSVFile_WhenTopBattingAverage_ShouldreturnTopPlayerName" classname="com.cricket.CricketLeagueAnalyserTest" time="0.268"/>
-  <testcase name="givenMostRunsCSVFile_WhenTopBattingFourse_ShouldreturnTopPlayerName" classname="com.cricket.CricketLeagueAnalyserTest" time="0.222"/>
-  <testcase name="givenMostRunsCSVFile_WhenTopBattingSixesAndFours_ShouldReturnTopPlayerName" classname="com.cricket.CricketLeagueAnalyserTest" time="0.133"/>
-  <testcase name="givenMostRunsCSVFile_WhenTopBattingStrikeRate_ShouldreturnTopPlayerName" classname="com.cricket.CricketLeagueAnalyserTest" time="0.165"/>
-  <system-out><![CDATA[]]></system-out>
+  <testcase name="givenMostRunsCSVFile_WhenTopBattingRuns_ShouldreturnAverage" classname="com.cricket.CricketLeagueAnalyserTest" time="0.951"/>
+  <system-out><![CDATA[692
+]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

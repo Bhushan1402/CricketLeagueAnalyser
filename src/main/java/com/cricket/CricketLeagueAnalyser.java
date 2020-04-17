@@ -19,7 +19,6 @@ public class CricketLeagueAnalyser {
 
     public void loadCricketData(String csvFilePath){
        cricketMap = new CricketAdapterFactory().grtCricketData(csvFilePath);
-
     }
 
     public String getAverageWiseBySortedBatsManData(){
@@ -51,8 +50,8 @@ public class CricketLeagueAnalyser {
         String jsonData = this.getDescendingOrder(cricketDAOComparator);
         return jsonData;
     }
-    public String getStrikeRateWiseBySortedAverageBatsManData() {
-        Comparator<CricketDAO> cricketDAOComparator = Comparator.comparing(cricketDAO -> cricketDAO.average);
+    public String getRunsWiseBySortedAverageBatsManData() {
+        Comparator<CricketDAO> cricketDAOComparator = Comparator.comparing(cricketDAO -> cricketDAO.runs);
         String jsonData = this.getDescendingOrder(cricketDAOComparator);
         return jsonData;
     }
