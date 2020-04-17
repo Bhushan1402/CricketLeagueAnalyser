@@ -6,7 +6,6 @@ import org.junit.Test;
 
 public class CricketLeagueAnalyserTest {
 
-
     private static final String MOST_RUNS_CSV ="./src/test/resources/csv/IPL2019FactsheetMostRuns.csv" ;
 
     @Test
