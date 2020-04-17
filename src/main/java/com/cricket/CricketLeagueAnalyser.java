@@ -28,6 +28,12 @@ public class CricketLeagueAnalyser {
         return jsonData;
     }
 
+    public String getStrikeRateWiseBySortedBatsManData(){
+        Comparator<CricketDAO> cricketDAOComparator=Comparator.comparing(cricketDAO->cricketDAO.strikeRate);
+        String jsonData = this.getDescendingOrder(cricketDAOComparator);
+        return jsonData;
+    }
+
     public String getDescendingOrder(Comparator<CricketDAO> comparator){
         ArrayList cricketDTOS= cricketMap.values().stream().sorted(comparator.reversed())
                 .map(cricketDAO ->cricketDAO.getCricketDTO())
