@@ -9,7 +9,7 @@ public class CricketLeagueAnalyserTest {
     private static final String MOST_RUNS_CSV ="./src/test/resources/csv/IPL2019FactsheetMostRuns.csv" ;
 
     @Test
-    public void givenCSVFile_WhenTopBattingAverage_ShouldreturnTopPlayerName() {
+    public void givenMostRunsCSVFile_WhenTopBattingAverage_ShouldreturnTopPlayerName() {
         CricketLeagueAnalyser cricketLeagueAnalyser = new CricketLeagueAnalyser();
         cricketLeagueAnalyser.loadCricketData(MOST_RUNS_CSV);
         String averageWiseBySortedBatsManData = cricketLeagueAnalyser.getAverageWiseBySortedBatsManData();
@@ -18,7 +18,7 @@ public class CricketLeagueAnalyserTest {
     }
 
     @Test
-    public void givenCSVFile_WhenTopBattingStrikeRate_ShouldreturnTopPlayerName() {
+    public void givenMostRunsCSVFile_WhenTopBattingStrikeRate_ShouldreturnTopPlayerName() {
         CricketLeagueAnalyser cricketLeagueAnalyser = new CricketLeagueAnalyser();
         cricketLeagueAnalyser.loadCricketData(MOST_RUNS_CSV);
         String strikeRate = cricketLeagueAnalyser.getStrikeRateWiseBySortedBatsManData();
@@ -26,4 +26,20 @@ public class CricketLeagueAnalyserTest {
         Assert.assertEquals(333.33,mostRunsCSV[0].strikeRate, 0.0);
     }
 
+    @Test
+    public void givenMostRunsCSVFile_WhenTopBattingSixes_ShouldreturnTopPlayerName() {
+        CricketLeagueAnalyser cricketLeagueAnalyser = new CricketLeagueAnalyser();
+        cricketLeagueAnalyser.loadCricketData(MOST_RUNS_CSV);
+        String strikeRate = cricketLeagueAnalyser.getSixesWiseBySortedBatsManData();
+        MostRunsCSV[] mostRunsCSV= new Gson().fromJson(strikeRate, MostRunsCSV[].class);
+        Assert.assertEquals("Andre Russell",mostRunsCSV[0].playerName);
+    }
+    @Test
+    public void givenMostRunsCSVFile_WhenTopBattingFourse_ShouldreturnTopPlayerName() {
+        CricketLeagueAnalyser cricketLeagueAnalyser = new CricketLeagueAnalyser();
+        cricketLeagueAnalyser.loadCricketData(MOST_RUNS_CSV);
+        String strikeRate = cricketLeagueAnalyser.getFoursWiseBySortedBatsManData();
+        MostRunsCSV[] mostRunsCSV= new Gson().fromJson(strikeRate, MostRunsCSV[].class);
+        Assert.assertEquals("Shikhar Dhawan",mostRunsCSV[0].playerName);
+    }
 }
