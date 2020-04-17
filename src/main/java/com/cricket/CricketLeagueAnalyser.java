@@ -45,6 +45,13 @@ public class CricketLeagueAnalyser {
         String jsonData = this.getDescendingOrder(cricketDAOComparator);
         return jsonData;
     }
+
+    public String getSixesFoursWiseBySortedBatsManData() {
+        Comparator<CricketDAO> cricketDAOComparator = Comparator.comparing(cricketDAO -> cricketDAO.fours+cricketDAO.sixes);
+        String jsonData = this.getDescendingOrder(cricketDAOComparator);
+        return jsonData;
+    }
+
     public String getDescendingOrder(Comparator<CricketDAO> comparator){
         ArrayList cricketDTOS= cricketMap.values().stream().sorted(comparator.reversed())
                 .map(cricketDAO ->cricketDAO.getCricketDTO())

@@ -32,8 +32,9 @@ public class CricketLeagueAnalyserTest {
         cricketLeagueAnalyser.loadCricketData(MOST_RUNS_CSV);
         String strikeRate = cricketLeagueAnalyser.getSixesWiseBySortedBatsManData();
         MostRunsCSV[] mostRunsCSV= new Gson().fromJson(strikeRate, MostRunsCSV[].class);
-        Assert.assertEquals("Andre Russell",mostRunsCSV[0].playerName);
+        Assert.assertEquals(83,mostRunsCSV[0].sixes+mostRunsCSV[0].fours);
     }
+
     @Test
     public void givenMostRunsCSVFile_WhenTopBattingFourse_ShouldreturnTopPlayerName() {
         CricketLeagueAnalyser cricketLeagueAnalyser = new CricketLeagueAnalyser();
@@ -41,5 +42,14 @@ public class CricketLeagueAnalyserTest {
         String strikeRate = cricketLeagueAnalyser.getFoursWiseBySortedBatsManData();
         MostRunsCSV[] mostRunsCSV= new Gson().fromJson(strikeRate, MostRunsCSV[].class);
         Assert.assertEquals("Shikhar Dhawan",mostRunsCSV[0].playerName);
+    }
+
+    @Test
+    public void givenMostRunsCSVFile_WhenTopBattingSixesAndFours_ShouldReturnTopPlayerName() {
+        CricketLeagueAnalyser cricketLeagueAnalyser = new CricketLeagueAnalyser();
+        cricketLeagueAnalyser.loadCricketData(MOST_RUNS_CSV);
+        String sortedData = cricketLeagueAnalyser.getSixesFoursWiseBySortedBatsManData();
+        MostRunsCSV[] mostRunsCSV= new Gson().fromJson(sortedData, MostRunsCSV[].class);
+        Assert.assertEquals(204.81,mostRunsCSV[0].strikeRate,0.0);
     }
 }
