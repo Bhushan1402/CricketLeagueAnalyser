@@ -66,7 +66,14 @@ public class CricketDAO {
         return strikeRate;
     }
 
+    public double getAverage() {
+        return average;
+    }
 
+
+    public int getWickets() {
+        return wickets;
+    }
 }
 
 
