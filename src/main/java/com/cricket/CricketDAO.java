@@ -62,5 +62,11 @@ public class CricketDAO {
         return new MostWktsCSV(playerName,matches,inings,runs,String.valueOf(average),String.valueOf(strikeRate),fours,fives);
     }
 
+    public double getStrikeRate() {
+        return strikeRate;
+    }
+
 
 }
+
+
