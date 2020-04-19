@@ -89,12 +89,12 @@ public String getJsonInDescendingOrder(Comparator<CricketDAO> comparator,String.
         String jsonData = this.getDescendingOrder(cricketComparator,"Wickets");
         return jsonData;
     }//uc8
-   /* public String getStrikeRateWiseSortedBowlersData() {
+    public String getStrikeRateWiseSortedBowlersData() {
         Comparator<CricketDAO> cricketComparator=Comparator.comparing(cricketDAO ->cricketDAO.strikeRate);
-        String jsonData = this.getJsonInDescendingOrder(cricketComparator,"wickets");
+        String jsonData = this.getDescendingOrder(cricketComparator,"wickets");
         return jsonData;
     }//uc9
-    public String getBestEconomyRateWiseSortedBowlersData() {
+   /* public String getBestEconomyRateWiseSortedBowlersData() {
         Comparator<CricketDAO> cricketComparator=Comparator.comparing(cricketDAO ->cricketDAO.economy);
         String jsonData = this.getJsonInDescendingOrder(cricketComparator,"wickets");
         return jsonData;
