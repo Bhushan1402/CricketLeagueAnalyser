@@ -123,15 +123,15 @@ public void givenMostWicketsCSVFile_WhenTopBowlingAverage_ShouldReturnTopPlayerN
         MostRunsCSV[] mostRunsCSV = new Gson().fromJson(sortedData, MostRunsCSV[].class);
         Assert.assertEquals("Krishnappa Gowtham",mostRunsCSV[0].playerName);
     }
-      /*
+
 @Test//uc12
     public void givenMostWicketsCSVFile_SortedByBestWicketsWithAverage_ShouldReturnTopPlayerName() {
-        CricketAnalyser cricketAnalyser=new CricketAnalyser();
-        cricketAnalyser.loadCricketData(MOST_RUNS_CSV,MOST_WKTS_CSV);
+        CricketLeagueAnalyser cricketAnalyser=new CricketLeagueAnalyser();
+        cricketAnalyser.loadCricketData(MOST_RUNS_CSV,MOST_BALL_CSV);
         String sortedData = cricketAnalyser.getMaximumWicketsWithBestAverageWiseSortedBowlersData();
         MostRunsCSV[] mostRunsCSV = new Gson().fromJson(sortedData, MostRunsCSV[].class);
         Assert.assertEquals("Imran Tahir",mostRunsCSV[0].playerName);
     }
-*/
+
 
 }

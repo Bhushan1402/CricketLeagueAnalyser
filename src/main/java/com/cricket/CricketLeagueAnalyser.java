@@ -111,12 +111,11 @@ public String getJsonInDescendingOrder(Comparator<CricketDAO> comparator,String.
         String jsonData = this.getDescendingOrder(cricketComparator,"bhushan");
         return jsonData;
     }//uc12
-   /*  public String getMaximumWicketsWithBestAverageWiseSortedBowlersData() {
+     public String getMaximumWicketsWithBestAverageWiseSortedBowlersData() {
         Comparator<CricketDAO> cricketComparator=Comparator.comparing(CricketDAO::getWickets).
                 thenComparing(cricketDAO ->cricketDAO.average);
-        String jsonData = this.getJsonInDescendingOrder(cricketComparator,"bhushan");
+        String jsonData = this.getDescendingOrder(cricketComparator,"bhushan");
         return jsonData;
     }
-*/
 
 }

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.cricket.CricketLeagueAnalyserTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-04-19T12:14:44" hostname="SHREE" time="0.981">
+<testsuite name="com.cricket.CricketLeagueAnalyserTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-04-19T12:18:31" hostname="SHREE" time="0.975">
   <properties/>
-  <testcase name="givenMostWicketsCSVFile_SortedByBestAverageWithStrikeRate_ShouldReturnTopPlayerName" classname="com.cricket.CricketLeagueAnalyserTest" time="0.981"/>
+  <testcase name="givenMostWicketsCSVFile_SortedByBestAverageWithStrikeRate_ShouldReturnTopPlayerName" classname="com.cricket.CricketLeagueAnalyserTest" time="0.975"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
