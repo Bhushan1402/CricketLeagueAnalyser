@@ -16,21 +16,25 @@ import java.util.stream.StreamSupport;
 public class IPLAdapter extends CricketAdapter {
 
     @Override
-    public Map<String, CricketDAO> loadCricketData(String csvFilePath) {
-        Map<String, CricketDAO> cricketMap=new HashMap<>();
-        try(Reader reader= Files.newBufferedReader(Paths.get(csvFilePath))) {
-            ICSVBuilder builder = CSVBuilderFactory.createCSVBuilder();
-            Iterator<MostRunsCSV> csvFileIterator = builder.getStateCSVFileIterator(reader, MostRunsCSV.class);
-            Iterable<MostRunsCSV> cscIterable = () -> csvFileIterator;
-            StreamSupport.stream(cscIterable.spliterator(),false)
-                    .map(MostRunsCSV.class::cast)
-                    .forEach(batsManCSV->cricketMap.put(batsManCSV.playerName,new CricketDAO( batsManCSV)));
-
-        } catch (IOException e) {
-            e.printStackTrace();
-        } catch (CSVBuilderException e) {
-            e.printStackTrace();
+    public <E> Map<String, CricketDAO> loadCricketData(Class<E> className, String csvFilePath) {
+            Map<String, CricketDAO> cricketMap = new HashMap<>();
+            try (Reader reader = Files.newBufferedReader(Paths.get(csvFilePath))) {
+                ICSVBuilder builder = CSVBuilderFactory.createCSVBuilder();
+                Iterator<E> csvFileIterator = builder.getStateCSVFileIterator(reader, className);
+                Iterable<E> cscIterable = () -> csvFileIterator;
+                if (className.getName().equals("com.cricket.MostRunsCSV")) {
+                    StreamSupport.stream(cscIterable.spliterator(), false)
+                            .map(MostRunsCSV.class::cast)
+                            .forEach(batsManCSV -> cricketMap.put(batsManCSV.playerName, new CricketDAO(batsManCSV)));
+                } else if (className.getName().equals("com.cricket.MostWktsCSV")) {
+                    StreamSupport.stream(cscIterable.spliterator(), false)
+                            .map(MostWktsCSV.class::cast)
+                            .forEach(batsManCSV -> cricketMap.put(batsManCSV.playerName, new CricketDAO(batsManCSV)));
+                }
+            } catch (IOException | CSVBuilderException e) {
+                e.printStackTrace();
+            }
+            return cricketMap;
         }
-        return cricketMap;
     }
-}
+

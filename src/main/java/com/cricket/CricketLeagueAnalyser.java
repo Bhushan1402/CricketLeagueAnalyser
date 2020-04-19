@@ -17,10 +17,17 @@ public class CricketLeagueAnalyser {
         this.cricketMap = new HashMap<>();
     }
 
-    public void loadCricketData(String csvFilePath){
-       cricketMap = new CricketAdapterFactory().grtCricketData(csvFilePath);
+    public void loadCricketData(String... csvFilePath) {
+       cricketMap = new CricketAdapterFactory().getCricketData(csvFilePath);
     }
-
+/*
+public String getJsonInDescendingOrder(Comparator<CricketDAO> comparator,String...type){
+        if (type.length==0){
+            ArrayList cricketDTOS=cricketMap.values().stream().sorted(comparator.reversed())
+                    .map(cricketDAO -> cricketDAO.getCricketDTO())
+                    .collect(toCollection(ArrayList::new));
+            return new Gson().toJson(cricketDTOS);
+        }*/
     public String getAverageWiseBySortedBatsManData(){
         Comparator<CricketDAO> cricketDAOComparator=Comparator.comparing(cricketDAO->cricketDAO.average);
         String jsonData = this.getDescendingOrder(cricketDAOComparator);
@@ -56,10 +63,60 @@ public class CricketLeagueAnalyser {
         return jsonData;
     }
 
-    public String getDescendingOrder(Comparator<CricketDAO> comparator){
-        ArrayList cricketDTOS= cricketMap.values().stream().sorted(comparator.reversed())
-                .map(cricketDAO ->cricketDAO.getCricketDTO())
+    public String getDescendingOrder(Comparator<CricketDAO> comparator,String... type){
+        if (type.length==0) {
+            ArrayList cricketDTOS = cricketMap.values().stream().sorted(comparator.reversed())
+                    .map(cricketDAO -> cricketDAO.getCricketDTO())
+                    .collect(toCollection(ArrayList::new));
+            return new Gson().toJson(cricketDTOS);
+        }
+        ArrayList cricketDTOS = cricketMap.values().stream().sorted(comparator.reversed())
+                .map(cricketDAO -> cricketDAO.getCricketDTO("type"))
                 .collect(toCollection(ArrayList::new));
         return new Gson().toJson(cricketDTOS);
     }
+
+//    public String getAverageWiseBySortedBowlerData(){
+//        Comparator<CricketDAO> cricketDAOComparator=Comparator.comparing(cricketDAO->cricketDAO.average);
+//        String jsonData = this.getDescendingOrder(cricketDAOComparator,"Wickets");
+//        return jsonData;
+//    }
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    //uc7
+
+    public String getAverageWiseSortedBowlersData() {
+        Comparator<CricketDAO> cricketComparator=Comparator.comparing(cricketDAO ->cricketDAO.average);
+        String jsonData = this.getDescendingOrder(cricketComparator,"Wickets");
+        return jsonData;
+    }//uc8
+   /* public String getStrikeRateWiseSortedBowlersData() {
+        Comparator<CricketDAO> cricketComparator=Comparator.comparing(cricketDAO ->cricketDAO.strikeRate);
+        String jsonData = this.getJsonInDescendingOrder(cricketComparator,"wickets");
+        return jsonData;
+    }//uc9
+    public String getBestEconomyRateWiseSortedBowlersData() {
+        Comparator<CricketDAO> cricketComparator=Comparator.comparing(cricketDAO ->cricketDAO.economy);
+        String jsonData = this.getJsonInDescendingOrder(cricketComparator,"wickets");
+        return jsonData;
+    }//uc10
+    public String getBestStrikeRateWith4wAnd5wWiseSortedBowlersData() {
+        Comparator<CricketDAO> cricketComparator=Comparator.comparing(CricketDAO::getStrikeRate).
+                thenComparing(cricketDAO ->cricketDAO.fourWickets+cricketDAO.fiveWickets);
+        String jsonData = this.getJsonInDescendingOrder(cricketComparator,"bhushan");
+        return jsonData;
+    }//uc11
+    public String getMaximumWicketsWithBestStrikeRateWiseSortedBowlersData() {
+        Comparator<CricketDAO> cricketComparator=Comparator.comparing(CricketDAO::getAverage).
+                thenComparing(cricketDAO ->cricketDAO.strikeRate);
+        String jsonData = this.getJsonInDescendingOrder(cricketComparator,"bhushan");
+        return jsonData;
+    }//uc12
+    public String getMaximumWicketsWithBestAverageWiseSortedBowlersData() {
+        Comparator<CricketDAO> cricketComparator=Comparator.comparing(CricketDAO::getWickets).
+                thenComparing(cricketDAO ->cricketDAO.average);
+        String jsonData = this.getJsonInDescendingOrder(cricketComparator,"bhushan");
+        return jsonData;
+    }
+*/
+
 }
