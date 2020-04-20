@@ -1,14 +1,18 @@
 package com.cricket;
 
-public class CricketAnalyserException extends Throwable {
-    enum ExceptionType {
-        CRICKET_FILE_PROBLEM,CRICKET_DATA_NOT_FOUND;
+public class CricketAnalyserException extends Exception{
+    public static ExceptionType type;
+    public static enum ExceptionType{
+        FILE_ERROR,NO_IPL_DATA,FILE_NOT_FOUND,IPL_CSVFILE_PROBLEM,SOME_FILE_ISSUE
     }
 
-    ExceptionType type;
-
-    public CricketAnalyserException(String message, ExceptionType type) {
+    public CricketAnalyserException(String message,ExceptionType type) {
         super(message);
-        this.type = type;
+        this.type=type;
+    }
+
+    public CricketAnalyserException(ExceptionType type,String message) {
+        super(message);
+        this.type=type;
     }
 }

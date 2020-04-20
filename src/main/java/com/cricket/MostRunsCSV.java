@@ -3,66 +3,50 @@ package com.cricket;
 import com.opencsv.bean.CsvBindByName;
 
 public class MostRunsCSV {
-
-    @CsvBindByName(column = "PLAYER", required = true)
-    public String playerName;
-
-    @CsvBindByName(column = "Mat", required = true)
-    public int matches;
-
-    @CsvBindByName(column = "Inns", required = true)
-    public int inings;
-
-    @CsvBindByName(column = "NO", required = true)
-    public int notOut;
-
-    @CsvBindByName(column = "Runs", required = true)
-    public int runs;
-
-    @CsvBindByName(column = "HS", required = true)
-    public String highestScore;
-
-    @CsvBindByName(column = "Avg", required = true)
-    public String average;
-
-    @CsvBindByName(column = "BF", required = true)
-    public int ballFaced;
-
-    @CsvBindByName(column = "SR", required = true)
-    public double strikeRate;
-
-    @CsvBindByName(column = "100", required = true)
-    public int centuries;
-
-    @CsvBindByName(column = "50", required = true)
-    public int halfCenturies;
-
-    @CsvBindByName(column = "4s", required = true)
-    public int fours;
-
-    @CsvBindByName(column = "6s", required = true)
-    public int sixes;
-
     public MostRunsCSV() {
     }
-
-    public MostRunsCSV(String playerName, int matches,
-                       int inings, int notOut,
-                       int runs, String highestScore,
-                       String average, int ballFaced,
-                       double strikeRate, int centuries, int halfCenturies, int fours, int sixes) {
-        this.playerName = playerName;
-        this.matches = matches;
-        this.inings = inings;
-        this.notOut = notOut;
-        this.runs = runs;
-        this.highestScore = highestScore;
-        this.average = average;
-        this.ballFaced = ballFaced;
-        this.strikeRate = strikeRate;
-        this.centuries = centuries;
-        this.halfCenturies = halfCenturies;
-        this.fours = fours;
-        this.sixes = sixes;
+    @CsvBindByName(column = "POS")
+    public int position;
+    @CsvBindByName(column = "PLAYER")
+    public String playerName;
+    @CsvBindByName(column = "Mat")
+    public int match;
+    @CsvBindByName(column = "Inns")
+    public int innings;
+    @CsvBindByName(column = "NO")
+    public int notOut;
+    @CsvBindByName(column = "Runs")
+    public int runs;
+    @CsvBindByName(column = "HS")
+    public String highestScored;
+    @CsvBindByName(column = "Avg")
+    public double average;
+    @CsvBindByName(column = "BF")
+    public int ballFaced;
+    @CsvBindByName(column = "SR")
+    public double strikeRate;
+    @CsvBindByName(column = "100")
+    public int noOfHundred;
+    @CsvBindByName(column = "50")
+    public int noOfFifty;
+    @CsvBindByName(column = "4s")
+    public int noOfFours;
+    @CsvBindByName(column = "6s")
+    public int noOfSixes;
+    public MostRunsCSV(MostRunsCSV batsManRunCSV) {
+        this.position = batsManRunCSV.position;
+        this.playerName = batsManRunCSV.playerName;
+        this.match = batsManRunCSV.match;
+        this.innings = batsManRunCSV.innings;
+        this.notOut = batsManRunCSV.notOut;
+        this.runs = batsManRunCSV.runs;
+        this.highestScored = batsManRunCSV.highestScored;
+        this.average = batsManRunCSV.average;
+        this.ballFaced = batsManRunCSV.ballFaced;
+        this.strikeRate = batsManRunCSV.strikeRate;
+        this.noOfHundred = batsManRunCSV.noOfHundred;
+        this.noOfFifty = batsManRunCSV.noOfFifty;
+        this.noOfFours = batsManRunCSV.noOfFours;
+        this.noOfSixes = batsManRunCSV.noOfSixes;
     }
 }
