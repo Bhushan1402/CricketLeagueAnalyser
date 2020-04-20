@@ -133,4 +133,21 @@ public void givenMostWicketsCSVFile_WhenTopBowlingAverage_ShouldReturnTopPlayerN
         Assert.assertEquals("Imran Tahir",mostRunsCSV[0].playerName);
     }
 
+    @Test//uc13
+    public void givenBothCSVFile_SortedByBestBattingAndBowing_ShouldReturnTopPlayerName() {
+        CricketLeagueAnalyser cricketAnalyser = new CricketLeagueAnalyser();
+        cricketAnalyser.loadCricketData(MOST_RUNS_CSV,MOST_BALL_CSV);
+        String playerName = cricketAnalyser.getBestBattingAndBowlingAverageWisedSortedData(MOST_BALL_CSV);
+        Assert.assertEquals("Andre Russell",playerName);
+    }
+
+    @Test//uc14
+    public void givenBothCSVFile_KnowTheBestAllRounder_ShouldReturnTopPlayerName() {
+        CricketLeagueAnalyser cricketAnalyser = new CricketLeagueAnalyser();
+        cricketAnalyser.loadCricketData(MOST_RUNS_CSV,MOST_BALL_CSV);
+        String sortedData = cricketAnalyser.getBestAllRounder();
+        MostWktsCSV[] mostWktsCSVS=new Gson().fromJson(sortedData,MostWktsCSV[].class);
+        Assert.assertEquals("Imran Tahir",mostWktsCSVS[0].playerName);
+    }
+
 }

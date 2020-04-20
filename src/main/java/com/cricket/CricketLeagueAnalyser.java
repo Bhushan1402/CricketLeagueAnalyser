@@ -118,4 +118,24 @@ public String getJsonInDescendingOrder(Comparator<CricketDAO> comparator,String.
         return jsonData;
     }
 
+    public String getBestBattingAndBowlingAverageWisedSortedData(String csvFilePath){
+        String bowlerData =this.getAverageWiseSortedBowlersData();
+        MostWktsCSV[] bowler=new Gson().fromJson(bowlerData,MostWktsCSV[].class);
+        this.loadCricketData(csvFilePath);
+        int position=0;
+        double maxAverage=0;
+        for(int i=0;i<bowler.length;i++){
+            CricketDAO cricketDAO = cricketMap.get(bowler[i].playerName);
+            if (cricketDAO!=null){
+                double batsManAverage=Double.valueOf(cricketDAO.average);
+                if (maxAverage<batsManAverage){
+                    maxAverage=batsManAverage;
+                    position=i;
+                }
+            }
+        }
+        String player=bowler[position].playerName;
+        return player;
+    }
+
 }
