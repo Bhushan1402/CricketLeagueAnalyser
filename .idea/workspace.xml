@@ -285,18 +285,4 @@
     </state>
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1587204277053" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/test/java/com/cricket/CricketLeagueAnalyserTest.java</url>
-          <line>127</line>
-          <properties class="com.cricket.CricketLeagueAnalyserTest" method="givenMostWicketsCSVFile_SortedByBestWicketsWithAverage_ShouldReturnTopPlayerName">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
 </project>
