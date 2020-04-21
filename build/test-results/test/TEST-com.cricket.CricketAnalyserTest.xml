@@ -1,30 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.cricket.CricketAnalyserTest" tests="19" skipped="0" failures="0" errors="0" timestamp="2020-04-21T06:04:06" hostname="SHREE" time="0.238">
+<testsuite name="com.cricket.CricketAnalyserTest" tests="19" skipped="0" failures="0" errors="0" timestamp="2020-04-21T06:21:01" hostname="SHREE" time="0.226">
   <properties/>
-  <testcase name="givenIPLWicketData_ShouldReturnExactCount" classname="com.cricket.CricketAnalyserTest" time="0.107"/>
-  <testcase name="givenIPLWicketData_IfSortedByBestStriking_Rate_with_5w_and_5w_ShouldReturn_TopStriking_Player" classname="com.cricket.CricketAnalyserTest" time="0.002"/>
-  <testcase name="givenIPLRunsData_IfSortedByBattingAverage_ShouldReturn_HighestBattingAverage_Player" classname="com.cricket.CricketAnalyserTest" time="0.005"/>
-  <testcase name="givenIPLRunsData_IfSortedBy_HitMaximum4sAnd6s_ShouldReturn_Player" classname="com.cricket.CricketAnalyserTest" time="0.008"/>
-  <testcase name="givenIPLWicketData_IfSortedByEconomy_ShouldReturn_BestEconomy_Player" classname="com.cricket.CricketAnalyserTest" time="0.003"/>
-  <testcase name="givenIPLRunsData_ShouldReturnExactCount" classname="com.cricket.CricketAnalyserTest" time="0.031"/>
+  <testcase name="givenIPLWicketData_ShouldReturnExactCount" classname="com.cricket.CricketAnalyserTest" time="0.148"/>
+  <testcase name="givenIPLWicketData_IfSortedByBestStriking_Rate_with_5w_and_5w_ShouldReturn_TopStriking_Player" classname="com.cricket.CricketAnalyserTest" time="0.001"/>
+  <testcase name="givenIPLRunsData_IfSortedByBattingAverage_ShouldReturn_HighestBattingAverage_Player" classname="com.cricket.CricketAnalyserTest" time="0.003"/>
+  <testcase name="givenIPLRunsData_IfSortedBy_HitMaximum4sAnd6s_ShouldReturn_Player" classname="com.cricket.CricketAnalyserTest" time="0.001"/>
+  <testcase name="givenIPLWicketData_IfSortedByEconomy_ShouldReturn_BestEconomy_Player" classname="com.cricket.CricketAnalyserTest" time="0.001"/>
+  <testcase name="givenIPLRunsData_ShouldReturnExactCount" classname="com.cricket.CricketAnalyserTest" time="0.024"/>
   <testcase name="givenIPLWicketData_IfSortedByBowlingStrikeRate_ShouldReturn_BowlingTopStrikeRate_Player" classname="com.cricket.CricketAnalyserTest" time="0.001"/>
-  <testcase name="givenIPLWicketData_IfSortedByBowlingAverageWithStrikeRate_shouldReturn_Player" classname="com.cricket.CricketAnalyserTest" time="0.002"/>
-  <testcase name="givenIPLRunsData_WithIncorrectHeader_ShouldThrowException" classname="com.cricket.CricketAnalyserTest" time="0.004"/>
+  <testcase name="givenIPLWicketData_IfSortedByBowlingAverageWithStrikeRate_shouldReturn_Player" classname="com.cricket.CricketAnalyserTest" time="0.001"/>
+  <testcase name="givenIPLRunsData_WithIncorrectHeader_ShouldThrowException" classname="com.cricket.CricketAnalyserTest" time="0.001"/>
   <testcase name="givenIPLRunsData_WithWrongFile_ShouldThrowException" classname="com.cricket.CricketAnalyserTest" time="0.001"/>
   <testcase name="givenCsvdata_IfSortedByBestBattingAndBollwingAverage_ShouldReturnRecord" classname="com.cricket.CricketAnalyserTest" time="0.002"/>
   <testcase name="givenIPLRunsData_IfSortedMaximumRuns_WithBestAverage_ShouldReturnPlayer" classname="com.cricket.CricketAnalyserTest" time="0.002"/>
   <testcase name="givenIPLRunsData_IfSortedByBattingWithStrike_Rate_ShouldReturn_TopStriking_Rate_Player" classname="com.cricket.CricketAnalyserTest" time="0.001"/>
-  <testcase name="givenCsvdata_IfSortedofAllRounder_ShouldReturnRecord" classname="com.cricket.CricketAnalyserTest" time="0.005"/>
-  <testcase name="givenIPLWicketData_IfSortedByBowlingAverage_ShouldReturn_BowlingAverage_Player" classname="com.cricket.CricketAnalyserTest" time="0.002"/>
-  <testcase name="givenIPLRunsData_IfSortedBestAverageWith_bestStrikingRateWith_ShouldReturnPlayer" classname="com.cricket.CricketAnalyserTest" time="0.006"/>
-  <testcase name="givenIPLWicketData_IfSortedByMaximumWicketWithBestBowlingAverage_shouldReturnRecord" classname="com.cricket.CricketAnalyserTest" time="0.003"/>
-  <testcase name="givenIPLRunsData_IfSortedBestStrikingRateWith_4sAnd6s_ShouldReturnPlayer" classname="com.cricket.CricketAnalyserTest" time="0.002"/>
-  <testcase name="givenIPLRunsData_WithIncorrectDelimiter_ShouldThrowException" classname="com.cricket.CricketAnalyserTest" time="0.005"/>
+  <testcase name="givenCsvdata_IfSortedofAllRounder_ShouldReturnRecord" classname="com.cricket.CricketAnalyserTest" time="0.001"/>
+  <testcase name="givenIPLWicketData_IfSortedByBowlingAverage_ShouldReturn_BowlingAverage_Player" classname="com.cricket.CricketAnalyserTest" time="0.001"/>
+  <testcase name="givenIPLRunsData_IfSortedBestAverageWith_bestStrikingRateWith_ShouldReturnPlayer" classname="com.cricket.CricketAnalyserTest" time="0.004"/>
+  <testcase name="givenIPLWicketData_IfSortedByMaximumWicketWithBestBowlingAverage_shouldReturnRecord" classname="com.cricket.CricketAnalyserTest" time="0.001"/>
+  <testcase name="givenIPLRunsData_IfSortedBestStrikingRateWith_4sAnd6s_ShouldReturnPlayer" classname="com.cricket.CricketAnalyserTest" time="0.003"/>
+  <testcase name="givenIPLRunsData_WithIncorrectDelimiter_ShouldThrowException" classname="com.cricket.CricketAnalyserTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[com.cricket.CricketAnalyserException: .\src\test\resources\csv\IPL2019FactsheetMostWkts.csv
 	at com.cricket.IPLAdapter.loadIPLCSVData(IPLAdapter.java:46)
 	at com.cricket.BowlerWicketAdapter.loadIPLCSVData(BowlerWicketAdapter.java:8)
-	at com.cricket.CricketAnalyser.loadIPLCSVData(CricketAnalyser.java:57)
+	at com.cricket.CricketAnalyser.loadIPLCSVData(CricketAnalyser.java:51)
 	at com.cricket.CricketAnalyserTest.givenIPLWicketData_ShouldReturnExactCount(CricketAnalyserTest.java:152)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -76,7 +76,7 @@
 com.cricket.CricketAnalyserException: .\src\test\resources\csv\IPL2019FactsheetMostRuns.csv
 	at com.cricket.IPLAdapter.loadIPLCSVData(IPLAdapter.java:46)
 	at com.cricket.BatsManRunsAdapter.loadIPLCSVData(BatsManRunsAdapter.java:21)
-	at com.cricket.CricketAnalyser.loadIPLCSVData(CricketAnalyser.java:57)
+	at com.cricket.CricketAnalyser.loadIPLCSVData(CricketAnalyser.java:51)
 	at com.cricket.CricketAnalyserTest.givenIPLRunsData_ShouldReturnExactCount(CricketAnalyserTest.java:18)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
