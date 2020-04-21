@@ -31,12 +31,12 @@ public abstract class IPLAdapter {
             ICSVBuilder csvBuilder = CSVBuilderFactory.createCSVBuilder();
             Iterator<E> censusCSVIterator = csvBuilder.getStateCSVFileIterator(reader,iplClass);
             Iterable<E> Iterable = () -> censusCSVIterator;
-            if (iplClass.getName().equals("com.cricketleague.MostRunsCSV")) {
+            if (iplClass.getName().equals("com.cricket.MostRunsCSV")) {
                 StreamSupport.stream(Iterable.spliterator(), false)
                         .map(MostRunsCSV.class::cast)
                         .forEach(iplCSV -> iplCSVMap .put(iplCSV.playerName, new CricketDAO(iplCSV)));
             }
-            else if (iplClass.getName().equals("com.cricketleague.MostWicketsCSV")) {
+            else if (iplClass.getName().equals("com.cricket.MostWicketsCSV")) {
                 StreamSupport.stream(Iterable.spliterator(), false)
                         .map(MostWicketsCSV.class::cast)
                         .forEach(iplBowlersCSV -> iplCSVMap .put(iplBowlersCSV.playerName, new CricketDAO(iplBowlersCSV)));

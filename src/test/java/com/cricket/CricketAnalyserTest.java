@@ -62,7 +62,7 @@ public class CricketAnalyserTest {
             MostRunsCSV[] iplRuns = new Gson().fromJson(sortedResult, MostRunsCSV[].class);
             Assert.assertEquals("MS Dhoni", iplRuns[0].playerName);
         } catch (CricketAnalyserException e) {
-            Assert.assertEquals(CricketAnalyserException.ExceptionType.SOME_FILE_ISSUE, e.type);
+            Assert.assertEquals(CricketAnalyserException.ExceptionType.FILE_NOT_FOUND, e.type);
         }
     }
     //UC 2
@@ -76,7 +76,7 @@ public class CricketAnalyserTest {
             MostRunsCSV[] iplRuns = new Gson().fromJson(sortedResult, MostRunsCSV[].class);
             Assert.assertEquals("Ishant Sharma", iplRuns[0].playerName);
         } catch (CricketAnalyserException e) {
-            Assert.assertEquals(CricketAnalyserException.ExceptionType.SOME_FILE_ISSUE, e.type);
+            Assert.assertEquals(CricketAnalyserException.ExceptionType.FILE_NOT_FOUND, e.type);
         }
 
     }
@@ -92,7 +92,7 @@ public class CricketAnalyserTest {
             MostRunsCSV[] iplRuns = new Gson().fromJson(sortedResult, MostRunsCSV[].class);
             Assert.assertEquals("Andre Russell", iplRuns[iplRuns.length - 1].playerName);
         } catch (CricketAnalyserException e) {
-            Assert.assertEquals(CricketAnalyserException.ExceptionType.SOME_FILE_ISSUE, e.type);
+            Assert.assertEquals(CricketAnalyserException.ExceptionType.FILE_NOT_FOUND, e.type);
         }
 
     }
@@ -107,7 +107,7 @@ public class CricketAnalyserTest {
             MostRunsCSV[] iplRuns = new Gson().fromJson(sortedResult, MostRunsCSV[].class);
             Assert.assertEquals("Ishant Sharma", iplRuns[0].playerName);
         } catch (CricketAnalyserException e) {
-            Assert.assertEquals(CricketAnalyserException.ExceptionType.SOME_FILE_ISSUE, e.type);
+            Assert.assertEquals(CricketAnalyserException.ExceptionType.FILE_NOT_FOUND, e.type);
         }
 
     }
@@ -122,7 +122,7 @@ public class CricketAnalyserTest {
             MostRunsCSV[] iplRuns = new Gson().fromJson(sortedResult, MostRunsCSV[].class);
             Assert.assertEquals("MS Dhoni", iplRuns[0].playerName);
         } catch (CricketAnalyserException e) {
-            Assert.assertEquals(CricketAnalyserException.ExceptionType.SOME_FILE_ISSUE, e.type);
+            Assert.assertEquals(CricketAnalyserException.ExceptionType.FILE_NOT_FOUND, e.type);
         }
 
     }
@@ -137,7 +137,7 @@ public class CricketAnalyserTest {
             MostRunsCSV[] iplRuns = new Gson().fromJson(sortedResult, MostRunsCSV[].class);
             Assert.assertEquals("David Warner ", iplRuns[0].playerName);
         } catch (CricketAnalyserException e) {
-            Assert.assertEquals(CricketAnalyserException.ExceptionType.SOME_FILE_ISSUE, e.type);
+            Assert.assertEquals(CricketAnalyserException.ExceptionType.FILE_NOT_FOUND, e.type);
         }
 
     }
@@ -167,7 +167,7 @@ public class CricketAnalyserTest {
             MostWicketsCSV[] iplwicket = new Gson().fromJson(sortedResult, MostWicketsCSV[].class);
             Assert.assertEquals("Krishnappa Gowtham", iplwicket[0].playerName);
         } catch (CricketAnalyserException e) {
-            Assert.assertEquals(CricketAnalyserException.ExceptionType.SOME_FILE_ISSUE, e.type);
+            Assert.assertEquals(CricketAnalyserException.ExceptionType.FILE_NOT_FOUND, e.type);
         }
     }
     //UC 8
@@ -181,7 +181,7 @@ public class CricketAnalyserTest {
             MostWicketsCSV[] iplwicket = new Gson().fromJson(sortedResult, MostWicketsCSV[].class);
             Assert.assertEquals("Krishnappa Gowtham", iplwicket[0].playerName);
         } catch (CricketAnalyserException e) {
-            Assert.assertEquals(CricketAnalyserException.ExceptionType.SOME_FILE_ISSUE, e.type);
+            Assert.assertEquals(CricketAnalyserException.ExceptionType.FILE_NOT_FOUND, e.type);
         }
     }
 
@@ -197,7 +197,7 @@ public class CricketAnalyserTest {
             MostWicketsCSV[] iplwicket = new Gson().fromJson(sortedResult, MostWicketsCSV[].class);
             Assert.assertEquals("Shivam Dube", iplwicket[0].playerName);
         } catch (CricketAnalyserException e) {
-            Assert.assertEquals(CricketAnalyserException.ExceptionType.SOME_FILE_ISSUE, e.type);
+            Assert.assertEquals(CricketAnalyserException.ExceptionType.FILE_NOT_FOUND, e.type);
         }
     }
 
@@ -212,7 +212,7 @@ public class CricketAnalyserTest {
             MostWicketsCSV[] iplwicket = new Gson().fromJson(sortedResult, MostWicketsCSV[].class);
             Assert.assertEquals("Lasith Malinga", iplwicket[0].playerName);
         } catch (CricketAnalyserException e) {
-            Assert.assertEquals(CricketAnalyserException.ExceptionType.SOME_FILE_ISSUE, e.type);
+            Assert.assertEquals(CricketAnalyserException.ExceptionType.FILE_NOT_FOUND, e.type);
         }
     }
 //UC 11
@@ -226,7 +226,7 @@ public class CricketAnalyserTest {
             MostWicketsCSV[] iplwicket = new Gson().fromJson(sortedResult, MostWicketsCSV[].class);
             Assert.assertEquals("Krishnappa Gowtham", iplwicket[iplwicket.length - 1].playerName);
         } catch (CricketAnalyserException e) {
-            Assert.assertEquals(CricketAnalyserException.ExceptionType.SOME_FILE_ISSUE, e.type);
+            Assert.assertEquals(CricketAnalyserException.ExceptionType.FILE_NOT_FOUND, e.type);
         }
     }
 
@@ -241,7 +241,7 @@ public class CricketAnalyserTest {
             MostWicketsCSV[] iplwicket = new Gson().fromJson(sortedResult, MostWicketsCSV[].class);
             Assert.assertEquals("Imran Tahir", iplwicket[0].playerName);
         } catch (CricketAnalyserException e) {
-            Assert.assertEquals(CricketAnalyserException.ExceptionType.SOME_FILE_ISSUE, e.type);
+            Assert.assertEquals(CricketAnalyserException.ExceptionType.FILE_NOT_FOUND, e.type);
         }
     }
 //uc 13
@@ -255,7 +255,7 @@ public class CricketAnalyserTest {
             MostWicketsCSV[] iplwicket = new Gson().fromJson(sortedResult, MostWicketsCSV[].class);
             Assert.assertEquals("Andre Russell",iplwicket[0].playerName);
         } catch (CricketAnalyserException e) {
-            Assert.assertEquals(CricketAnalyserException.ExceptionType.SOME_FILE_ISSUE, e.type);
+            Assert.assertEquals(CricketAnalyserException.ExceptionType.FILE_NOT_FOUND, e.type);
         }
     }
 //UC 14
@@ -271,7 +271,7 @@ public class CricketAnalyserTest {
 
         } catch (CricketAnalyserException e) {
 
-            Assert.assertEquals(CricketAnalyserException.ExceptionType.SOME_FILE_ISSUE, e.type);
+            Assert.assertEquals(CricketAnalyserException.ExceptionType.FILE_NOT_FOUND, e.type);
         }
     }
 
