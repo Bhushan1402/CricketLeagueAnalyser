@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7c840836-06e7-487b-b130-b3e71b0e4ce5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/cricket/CricketAnalyserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cricket/CricketAnalyserTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cricket/MockitoAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/cricket/AnalyserMockitoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cricket/CricketAnalyser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cricket/CricketAnalyser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cricket/CricketDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cricket/CricketDAO.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +32,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="AnnotationType" />
         <option value="Class" />
       </list>
     </option>
@@ -43,15 +49,15 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/cricket" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/resources/csv" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\BHUSHAN\IdeaProjects\CricketLeagueAnalyser\src\main\java\com\cricket" />
       <recent name="C:\Users\BHUSHAN\IdeaProjects\CricketLeagueAnalyser\src\test\resources\csv" />
+      <recent name="C:\Users\BHUSHAN\IdeaProjects\CricketLeagueAnalyser\src\main\java\com\cricket" />
       <recent name="C:\Users\BHUSHAN\IdeaProjects\CricketLeagueAnalyser\src\test\java\com\cricket" />
       <recent name="C:\Users\BHUSHAN\IdeaProjects\CricketLeagueAnalyser\libs" />
     </key>
@@ -62,7 +68,27 @@
       <recent name="com.cricket" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.CricketAnalyserTest">
+  <component name="RunManager" selected="Gradle.AnalyserMockitoTest.givenBatsManData_WhenCorrect_ReturnsCountOfThree">
+    <configuration name="AnalyserMockitoTest.givenBatsManData_WhenCorrect_ReturnsCountOfThree" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;com.cricket.AnalyserMockitoTest.givenBatsManData_WhenCorrect_ReturnsCountOfThree&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="CricketAnalyserTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -89,26 +115,6 @@
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" value="--tests &quot;com.cricket.CricketAnalyserTest.givenCsvdata_IfSortedofAllRounder_ShouldReturnRecord&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":cleanTest" />
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="CricketAnalyserTest.givenIPLRunsData_IfSortedByBattingAverage_ShouldReturn_HighestBattingAverage_Player" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.cricket.CricketAnalyserTest.givenIPLRunsData_IfSortedByBattingAverage_ShouldReturn_HighestBattingAverage_Player&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -165,11 +171,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.AnalyserMockitoTest.givenBatsManData_WhenCorrect_ReturnsCountOfThree" />
         <item itemvalue="Gradle.CricketAnalyserTest" />
         <item itemvalue="Gradle.CricketAnalyserTest.givenCsvdata_IfSortedofAllRounder_ShouldReturnRecord" />
         <item itemvalue="Gradle.CricketAnalyserTest.givenIPLRunsData_ShouldReturnExactCount" />
         <item itemvalue="Gradle.CricketAnalyserTest.givenIPLWicketData_IfSortedByBestStriking_Rate_with_5w_and_5w_ShouldReturn_TopStriking_Player" />
-        <item itemvalue="Gradle.CricketAnalyserTest.givenIPLRunsData_IfSortedByBattingAverage_ShouldReturn_HighestBattingAverage_Player" />
       </list>
     </recent_temporary>
   </component>
@@ -195,10 +201,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="21" key="#Project_Structure/0.0.1366.728@0.0.1366.728" timestamp="1587118438945" />
-    <state x="827" y="80" key="#com.intellij.ide.util.MemberChooser" timestamp="1587298373300">
+    <state x="249" y="142" key="#com.intellij.ide.util.MemberChooser" timestamp="1587746496859">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="827" y="80" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1587298373300" />
+    <state x="249" y="142" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1587746496859" />
     <state x="479" y="222" width="407" height="293" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1587164864954">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -207,26 +213,26 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="262" y="387" width="841" height="341" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728@0.0.1366.728" timestamp="1587223841787" />
-    <state x="413" y="109" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1587400295218">
+    <state x="413" y="109" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1587704492900">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="413" y="109" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1587400295218" />
-    <state width="1322" height="152" key="GridCell.Tab.0.bottom" timestamp="1587450546765">
+    <state x="413" y="109" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1587704492900" />
+    <state width="1322" height="91" key="GridCell.Tab.0.bottom" timestamp="1587747443482">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="152" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1587450546765" />
-    <state width="1322" height="152" key="GridCell.Tab.0.center" timestamp="1587450546765">
+    <state width="1322" height="91" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1587747443482" />
+    <state width="1322" height="91" key="GridCell.Tab.0.center" timestamp="1587747443482">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="152" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1587450546765" />
-    <state width="1322" height="152" key="GridCell.Tab.0.left" timestamp="1587450546765">
+    <state width="1322" height="91" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1587747443482" />
+    <state width="1322" height="91" key="GridCell.Tab.0.left" timestamp="1587747443482">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="152" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1587450546765" />
-    <state width="1322" height="152" key="GridCell.Tab.0.right" timestamp="1587450546765">
+    <state width="1322" height="91" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1587747443482" />
+    <state width="1322" height="91" key="GridCell.Tab.0.right" timestamp="1587747443482">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="152" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1587450546765" />
+    <state width="1322" height="91" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1587747443482" />
     <state width="1322" height="145" key="GridCell.Tab.1.bottom" timestamp="1587318288529">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -247,10 +253,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1366.728@0.0.1366.728" timestamp="1587149673500" />
-    <state x="378" y="186" key="com.intellij.ide.util.TipDialog" timestamp="1587443252656">
+    <state x="378" y="186" key="com.intellij.ide.util.TipDialog" timestamp="1587539032501">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="378" y="186" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1587443252656" />
+    <state x="378" y="186" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1587539032501" />
     <state x="92" y="92" width="1182" height="544" key="dock-window-1" timestamp="1587122114768">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -259,14 +265,14 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="92" y="92" width="1182" height="544" key="dock-window-2/0.0.1366.728@0.0.1366.728" timestamp="1587127249691" />
-    <state x="65" y="0" key="new project wizard" timestamp="1587377228842">
+    <state x="65" y="0" key="new project wizard" timestamp="1587625681301">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="65" y="0" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1587377228842" />
-    <state x="339" y="157" key="run.anything.popup" timestamp="1587231857948">
+    <state x="65" y="0" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1587625681301" />
+    <state x="339" y="157" key="run.anything.popup" timestamp="1587453378651">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="339" y="157" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1587231857948" />
+    <state x="339" y="157" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1587453378651" />
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1587204277053">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

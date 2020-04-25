@@ -5,8 +5,20 @@ import java.util.*;
 import java.util.stream.Collectors;
 
 public class CricketAnalyser {
-    public enum PlayerType {IPL_BATSMAN_RUNS, IPL_BOWLER_WICKETS}
 
+    private MockitoAdapter adapter;
+
+    public void setAdapter(PlayerType playerType, MockitoAdapter adapter){
+        this.adapter=adapter;
+    }
+    public enum PlayerType {
+        IPL_BATSMAN_RUNS, IPL_BOWLER_WICKETS
+    }
+
+    public Map<String, CricketDAO> loadData(PlayerType playerType, String csvFilePath){
+        iplCsvMap=this.adapter.loadData(csvFilePath);
+        return iplCsvMap;
+    }
     Map<String, CricketDAO> iplCsvMap = new HashMap<>();
     Map<Sorted.SortByField, Comparator<CricketDAO>> fieldComparatorMap = null;
     Map<String, CricketDAO> allRounderMap = null;
@@ -16,7 +28,6 @@ public class CricketAnalyser {
     public void setIplAdapter(IPLAdapter iplAdapter) {
         this.iplAdapter = iplAdapter;
     }
-
 
     public CricketAnalyser() {
         iplCsvMap = new HashMap<>();

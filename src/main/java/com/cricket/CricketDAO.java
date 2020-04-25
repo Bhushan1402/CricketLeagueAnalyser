@@ -1,6 +1,7 @@
 package com.cricket;
 
 public class CricketDAO {
+    private int centuries;
     public String playerName;
     public int match;
     public double average;
@@ -39,5 +40,15 @@ public class CricketDAO {
         fourWicket=mostWicketsCSV.fourWicket;
         fiveWicket=mostWicketsCSV.fiveWicket;
 
+    }
+
+    public CricketDAO(String playerName, int runs, double average, double strikeRate,int noOfFours, int noOfSixes) {
+        this.playerName = playerName;
+        this.runs=runs;
+        this.average=average;
+        this.strikeRate = strikeRate;
+        this.noOfFours = noOfFours;
+        this.noOfSixes = noOfSixes;
+        this.centuries=centuries;
     }
 }
