@@ -1,5 +1,6 @@
 package com.cricket;
 
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
@@ -49,6 +50,7 @@ public class AnalyserMockitoTest {
             cricketAnalyser.setAdapter(CricketAnalyser.PlayerType.IPL_BATSMAN_RUNS,adapter);
             when(this.adapter.loadData(ORIGINAL_RUNS_FILE_PATH)).thenReturn(battingMap);
            Map<String, CricketDAO> daoMap = cricketAnalyser.loadData(CricketAnalyser.PlayerType.IPL_BATSMAN_RUNS,ORIGINAL_RUNS_FILE_PATH);
+        Assert.assertEquals(3,battingMap.size());
     }
 
     @Test
@@ -56,5 +58,6 @@ public class AnalyserMockitoTest {
         cricketAnalyser.setAdapter(CricketAnalyser.PlayerType.IPL_BOWLER_WICKETS,adapter);
         when(this.adapter.loadData(WKTS_FILE_PATH)).thenReturn(bowlingMap);
         Map<String, CricketDAO> daoMap = cricketAnalyser.loadData(CricketAnalyser.PlayerType.IPL_BATSMAN_RUNS,WKTS_FILE_PATH);
+        Assert.assertEquals(3,bowlingMap.size());
     }
 }
